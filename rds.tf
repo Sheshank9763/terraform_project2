@@ -37,6 +37,6 @@ resource "aws_db_subnet_group" "db_subnet1" {
     name = "subnetgroup1"
 }
 resource "aws_db_subnet_group" "db_subnet2" {
-    subnet_ids = [aws_subnet.private2.id,aws_subnet.public1.id,aws_subnet.private3.id]
+    subnet_ids = [aws_subnet.private2.id,aws_subnet.public1.id]
     name = "subnetgroup2"
 }
